@@ -30,3 +30,25 @@
   -help - in windows to find info about commands
 </p>
 ### 1.4 Forking and Cloning Reflection
+<p>
+  1.1 To create a new repo:
+  Go to your GitHub account and go to your profile
+  Navigate to the top right and hit the "+" symbol
+  Select "New Repository"
+  There it will take you to the page where you can name your new Repository
+  After you have named it you can set permissions/make it public or private
+  Then hit "Create Repository"
+  1.2 To fork a repo:
+  Once you are in that specific repo that you would like to fork
+  Navigate to the top right and hit the button that says "Fork"
+  Then select the account you would like to fork to
+  Finally, the repo will be added to that account that you selected
+  1.3  To clone a repo:
+  Navigate to the repo that you would like to clone
+  Find the HTTPS link and copy it
+  Go to your command line and cd into the directory where you would like the to store that repo
+  Once you are in that directory type "Git Clone" and paste the HTTPS link
+  Hit enter and it will clone the repo
+  1.4 If you want to create a repo that is blank or from scratch then you would want to create a new repo. But you would fork repo rather than create a new one when you want to build off of something that already contains information/data/code. This way, fork it over to your profile and you can continue building on it and change whatever you want without effect the original repo you forked from.
+  2. Something I struggle with when setting up git/GitHub was more in the command line. After watching the video I realized that I didn't have a directory for phase-0 so I thought about how I would create one using command line. I finally did "mkdir phase-0" and I was able to create the directory to clone the repo to. What I learned from this process is that I thought about what I previously learned in the other assignments and implemented it to this assignment. So just taking a step back and thinking about what I knew instead of thinking that I didn't know how to do something right away.
+</p>
