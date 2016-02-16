@@ -1,4 +1,4 @@
-![Site Map](c:/klam886/phase-0-curriculum/phase-0/week-2/imgs/site_map.png)
+![sitemap](imgs/site_map.png'Site Map')
 
 1. What are the 6 Phases of Web Design?
   The 6 phases of Web Design are: 1. Information Gathering, 2. Planning, 3. Design, 4. Development, 5. Testing and delivery, and 6. Maintence
@@ -19,4 +19,4 @@
   User experience is how a person feels when interfacing with a system. This is valuable because nowadays users access websites in different ways like, mobile devices, a vast landscape of browsers, different types of internet connections. So it is valuable to make sure that the user is having the best experience possible
 
 7. Which parts of the challenge did you find tedious?
-  I found the most tedious part of this challenge was figuring out now to put the .png into our design relfection.The instructions for that was not very clear. So figuring it out was probably the most tedious part.
+  I found the most tedious part of this challenge was figuring out now to put the .png into our design relfection.
