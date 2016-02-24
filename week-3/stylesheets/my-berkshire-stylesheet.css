@@ -1,1 +1,108 @@
+* {
+  color: #000080;
+  background-color: #ffffff;
+}
+
+div li a:link {
+  color: #800080;
+  font-size: medium;
+}
+
+div li a:visited {
+  color: #ff0000;
+  font-size: medium;
+}
+
+.left {
+  display: inline-block;
+  float: left;
+  width: 45%
+}
+
+.right {
+  display: inline-block;
+  float: right;
+  width: 45%
+}
+
+#linksize {
+  font-size: small;
+}
+
+div li {
+  font-size: small;
+}
+
+#title {
+  font-size: 20px;
+  text-align: center;
+}
+
+#address {
+  font-size: 14px;
+}
+
+#city {
+  font-size: 14px;
+}
+
+#page {
+  font-size: 16px;
+}
+
+#top {
+  text-align: center;
+  white-space: pre;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+#top::first-letter {
+    font-size: 200%;
+    }
+
+#H{
+  font-size: 200%;
+}
+
+#inc{
+  font-size: 50%;
+}
+
+img {
+  padding-top: 20px;
+  width: 100%;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+#image{
+ text-align: center;
+ border-bottom: 1px solid black;
+ font-size: 10px;
+ padding-bottom: 20px;
+}
+
+#website {
+  text-align: center
+  white-space: pre-line;
+}
+
+#last {
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+ a:link {
+  color: #800080;
+}
+
+ a:visited {
+  color: #ff0000;
+}
+
+#copy {
+  font-size: 10px;
+}
 
