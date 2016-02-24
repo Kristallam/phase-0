@@ -1,1 +1,125 @@
+* {
+  color: #000080;
+  background-color: #ffffff;
+}
 
+div li a:link {
+  color: #800080;
+  font-size: medium;
+}
+
+div li a:visited {
+  color: #ff0000;
+  font-size: medium;
+}
+
+.left {
+  display: inline-block;
+  float: left;
+  width: 45%
+}
+
+.right {
+  display: inline-block;
+  float: right;
+  width: 45%
+}
+
+#linksize {
+  font-size: small;
+}
+
+div li {
+  font-size: small;
+}
+
+#title {
+  font-size: 20px;
+  text-align: center;
+}
+
+#address {
+  font-size: 14px;
+}
+
+#city {
+  font-size: 14px;
+}
+
+#page {
+  font-size: 16px;
+}
+
+#top {
+  text-align: center;
+  white-space: pre;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+#top::first-letter {
+    font-size: 200%;
+    }
+
+#H{
+  font-size: 200%;
+}
+
+#inc{
+  font-size: 50%;
+}
+
+img {
+  padding-top: 20px;
+  width: 100%;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+#image{
+ text-align: center;
+ border-bottom: 1px solid black;
+ font-size: 10px;
+ padding-bottom: 20px;
+}
+
+#website {
+  text-align: center
+  white-space: pre-line;
+}
+
+#last {
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+ a:link {
+  color: #800080;
+}
+
+ a:visited {
+  color: #ff0000;
+}
+
+#copy {
+  font-size: 10px;
+}
+
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+  It is imporant to know the file path where your stylesheet is located. If it is within a folder you have to list the whole path.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+  It was really hard to get the site we wanted. I learned that with positioning we have to use width and also "inline-block". I think it was super hard to get that in the beginning. Took a lot of trial and error.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+  We used classes and IDs a lot of modify element styles.
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+  Yes we used a lot of classes and IDs. We did this so we can add color, size, font and everything to the page.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+  So when comparing to the actual code base, they used a lot of CSS within HTMl and it was hard to understand. I think ours was cleaner because we defined classes then went to on to add the details on the stylesheet.
+
+*/
