@@ -29,6 +29,8 @@ How do you run an RSpec file from the command line? Using "rspec file_name.rb"
 
 What was confusing about this material? What made sense? Formatting the address was a little bit hard for me. I think the main thing was learning how to read the spec file and understanding where to get the error. What made sense was what a variable is and what a method is.
 
+https://github.com/Kristallam/phase-0/blob/master/week-4/address/my_solution.rb
 
+https://github.com/Kristallam/phase-0/blob/master/week-4/math/my_solution.rb
 
 =end
