@@ -12,5 +12,9 @@
 
 #Your Solution Below
 def shortest_string(list_of_words)
-  list_of_words.min_by(&:length)
+
 end
+#Refactor using Ruby Method
+#def shortest_string(list_of_words)
+#  list_of_words.min_by(&:length)
+#end
