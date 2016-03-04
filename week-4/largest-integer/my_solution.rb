@@ -11,6 +11,15 @@
 # If +list_of_nums+ is empty the method should return nil
 
 # Your Solution Below
+#This one I just keep getting an infinte loop, I timeboxed here. My thought process was that i=0 and 1 greater than the list of number print i
+#def largest_integer(list_of_nums)
+#  i = 0
+#  while i > list_of_nums[i]
+#    p i
+#  end
+#  i -= 1
+#end
+#Refactor with Ruby method
 def largest_integer(list_of_nums)
   list_of_nums.max
 end
