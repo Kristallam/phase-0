@@ -14,6 +14,25 @@
 
 # Your Solution Below
 
-def count_between(list_of_integers, lower_bound, upper_bound)
+#Pesudocode
+#define a method that has three arguments
+# 1. An array of integers
+# 2. An integer lower bound
+# 3. An integer upper bound
+# This will return the numbers that are between the lower and upper bound and if the array is empty it will return 0
 
+=begin
+def count_between(list_of_integers, lower_bound, upper_bound)
+  x = 2
+  if x >= lower_bound && x <= upper_bound
+    p x
+  else
+    p 0
+  end
+end
+=end
+
+#REFACTOR USING RUBY METHOD
+def count_between(list_of_integers, lower_bound, upper_bound)
+ list_of_integers.count {|x| x>= lower_bound && x <= upper_bound}
 end
