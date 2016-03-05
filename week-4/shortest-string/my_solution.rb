@@ -11,10 +11,20 @@
 # If +list_of_words+ is empty the method should return nil
 
 #Your Solution Below
+#Pesudocode
+#define a method shortest_string that will go through a list of strings and return the shortest one
+#WHILE s is less than the list of words it will print s and change it to a string
+# s will increase by 1 everytime
+=begin
 def shortest_string(list_of_words)
-
+  s = 0
+  while s < list_of_words.length
+    p s.to_s
+    s += 1
+  end
 end
+=end
 #Refactor using Ruby Method
-#def shortest_string(list_of_words)
-#  list_of_words.min_by(&:length)
-#end
+def shortest_string(list_of_words)
+  list_of_words.min_by(&:length)
+end
