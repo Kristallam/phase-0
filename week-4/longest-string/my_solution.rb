@@ -12,6 +12,22 @@
 
 
 # Your Solution Below
+
+#Pesudocode
+#define a method longest_string that will go through a list of strings and return the longest one
+#WHILE s is less than the list of words it will print s and change it to a string
+# s will increase by 1 everytime
+=begin
+def longest_string(list_of_words)
+  s = 0
+  while s < list_of_words.length
+    p s.to_s
+    s += 1
+  end
+end
+=end
+
+#REFACTOR with Ruby Method
 def longest_string(list_of_words)
   list_of_words.max_by(&:length)
 end
