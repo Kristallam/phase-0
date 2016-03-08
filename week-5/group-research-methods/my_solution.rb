@@ -24,13 +24,12 @@ end
 # Also I said if n is an interger then n + 1
 
 def my_hash_modification_method!(my_family_pets_ages, n)
-  my_family_pets_ages.map {|k,v| [k, v + 2]}.to_h
+  my_family_pets_ages.each {|key, value| my_family_pets_ages[key] = value + n}
 end
-
-
 # Identify and describe the Ruby method(s) you implemented.
-# it goes through the key and value of my_family_pets_ages and then it will add 2 to each value
-# then turn it back to a hash with .to_h
+# it goes through each key and value pair
+# then the key will be set to have a new value which is value + n
+# in this case n = 2
 
 
 
