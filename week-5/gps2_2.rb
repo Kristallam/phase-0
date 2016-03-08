@@ -1,20 +1,47 @@
 # Method to create a list
-# input: string of items separated by spaces (example: "carrots apples cereal pizza")
+# input:  string - beer, soda, water, vodka, wine
 # steps:
-  # [fill in any steps here]
-  # set default quantity
-  # print the list to the console [can you use one of your other methods here?]
-# output: [what data type goes here, array or hash?]
+  # create a list using a hash
+  # qty: beer - 1, soda - 1, water - 1, vodka - 1, wine - 1
+  # print the list
+# output:hash
+
+def new_list(items)
+  list = Hash.new(1)
+  items.split.each do |drink|
+    list[drink] = 1
+  end
+  return list
+end
+
+list = new_list("beer soda water vodka wine")
 
 # Method to add an item to a list
-# input: item name and optional quantity
+# input: adding new items (drink, qty) -> (key, value)
 # steps:
-# output:
+    # adding the drink and qty to the list
+# output: new list will have added drink and qty
+
+def add_item(original_list, new_drink, qty)
+  original_list[new_drink] = qty
+end
+
+add_item(list, "Orange Juice", 1)
+add_item(list, "Apple Juice", 1)
+#p list
 
 # Method to remove an item from the list
-# input:
-# steps:
-# output:
+# input:the item that we want to remove  and where to remove from.
+# steps: remove the item from the list
+# output:updated list without the removed item
+
+def remove_item(og_list, drink)
+  og_list.delete(drink)
+end
+
+remove_item(list,"water")
+
+#p list
 
 # Method to update the quantity of an item
 # input:
@@ -22,6 +49,30 @@
 # output:
 
 # Method to print a list and make it look pretty
-# input:
+# input: the list itself
 # steps:
-# output:
+  # go through the list and print each item on its own line
+# output: Pretty list with drink and qty on each line by themselves
+
+def pretty_list(og_list)
+  og_list.each { |drink, qty| puts "#{drink}, #{qty}"}
+end
+
+pretty_list(list)
+
+=begin
+REFLECTION
+What did you learn about pseudocode from working on this challenge?
+
+
+What are the tradeoffs of using Arrays and Hashes for this challenge?
+
+What does a method return?
+
+What kind of things can you pass into methods as arguments?
+
+How can you pass information between methods?
+
+What concepts were solidified in this challenge, and what concepts are still confusing?
+
+=end
