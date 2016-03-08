@@ -63,16 +63,21 @@ pretty_list(list)
 =begin
 REFLECTION
 What did you learn about pseudocode from working on this challenge?
-
+  I learned how to use it more effectively and put in things that will help me more when I start to really code.
 
 What are the tradeoffs of using Arrays and Hashes for this challenge?
+  When we were using an array we weren't able to assign values to the key. So then what we had to do was convert it to a Hash so we could add value.
 
 What does a method return?
+  A method returns whatever we define it. So when we can the method it will run the code that we had within the method.
 
 What kind of things can you pass into methods as arguments?
+  You can pass any objects through a method as arugments.
 
 How can you pass information between methods?
+  To pass information between methods you have to pass it in the argument within each method.
 
 What concepts were solidified in this challenge, and what concepts are still confusing?
+  A lot were solidified, like creating a hash and passing it through methods to reuse it. I think what I still need a little more help on converting an array to a hash.
 
 =end
