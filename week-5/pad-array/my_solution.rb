@@ -1,7 +1,7 @@
 
 # Pad an Array
 
-# I worked on this challenge [by myself, with: ]
+# I worked on this challenge [by myself, with: Elizabeth Alexander]
 
 # I spent [] hours on this challenge.
 
@@ -71,14 +71,20 @@ end
 # 4. Reflection
 =begin
 Were you successful in breaking the problem down into small steps?
+  We struggled with it a little in the beginning, we had all the important parts down but I think putting it together was the hard part.
 
 Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
+  It was easy to translate the variables but I think more detailed pseudocode would've been better.
 
 Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
+  It was not successful, we had multiple inital solutions and then we took a step back and talked out the code and my pair was talking and breaking it down and I was taking notes which led us to the refactored solution.
 
 When you refactored, did you find any existing methods in Ruby to clean up your code?
+  I tried some existing Ruby methods but I couldn't get them to work. I tried .count and .times to interate through but I think I didn't do it right.
 
 How readable is your solution? Did you and your pair choose descriptive variable names?
+  We choose simple and not complicated variable names so I think it's pretty readable
 
 What is the difference between destructive and non-destructive methods in your own words?
+  Destructive method will change the original array and non-destructive method will not
 =end
