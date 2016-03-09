@@ -18,11 +18,10 @@
 
 # 1. Initial Solution
 def separate_comma(number)
-  new_array = []
-  n = 0
-  if number > n
+  if number > 3
     return number.to_s
   else
+      new_array = []
       new_num = number.to_s.reverse.split("")
       new_num.each do |i|
         if new_array.length % 3 == 0
