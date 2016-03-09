@@ -18,6 +18,22 @@
 
 # 1. Initial Solution
 def separate_comma(number)
+  new_array = []
+  n = 0
+  if number > n
+    return number.to_s
+  else
+      new_num = number.to_s.reverse.split("")
+      new_num.each do |i|
+        if new_array.length % 3 == 0
+          new_array.push("," + i.to_s)
+        end
+      end
+  end
+  new_array.join.reverse.chop!
+end
+=begin
+def separate_comma(number)
   num = number.to_s.split)
     # number be turned into string and the split it up
   new_num = num.size/3
