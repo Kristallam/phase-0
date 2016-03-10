@@ -60,11 +60,15 @@ end
 
 =begin
 # 4. Reflection
-Which data structure did you and your pair decide to implement and why? My pair and I decided to use Hash, honestly because in the 5.3 it gave us the hint to use Hash and then we also used Array because had to take an array and then return one.
+Which data structure did you and your pair decide to implement and why?
+My pair and I decided to use Hash, honestly because in the 5.3 it gave us the hint to use Hash and then we also used Array because had to take an array and then return one.
 
-Were you more successful breaking this problem down into implementable pseudocode than the last with a pair? We were succesfully using pseudocode, I think that helped us a lot because when we were coding and stuck we looked back to our pesudocode. Also a lot of times when we were coding we wanted to try something else but remembered to stay on track with pesudocode.
+Were you more successful breaking this problem down into implementable pseudocode than the last with a pair?
+We were succesfully using pseudocode, I think that helped us a lot because when we were coding and stuck we looked back to our pesudocode. Also a lot of times when we were coding we wanted to try something else but remembered to stay on track with pesudocode.
 
-What issues/successes did you run into when translating your pseudocode to code? The issue we had was figuring out how to write in code the max value. We tried max_by! then realized bang doesn't work with that then we tried it without and got an array so we found that we could use .values.max.
+What issues/successes did you run into when translating your pseudocode to code?
+The issue we had was figuring out how to write in code the max value. We tried max_by! then realized bang doesn't work with that then we tried it without and got an array so we found that we could use .values.max.
 
-What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement? Yeah we used .values.max and also << to push the number after the key. Even though max_by didn't work trying it allowed us to understand it a bit more.
+What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
+Yeah we used .values.max and also << to push the number after the key. Even though max_by didn't work trying it allowed us to understand it a bit more.
 =end
