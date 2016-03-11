@@ -15,7 +15,7 @@
   # Change it to a string
   # Return the out as a string with commas
 
-
+=begin
 # 1. Initial Solution
 def separate_comma(number)
   if number > 3
@@ -31,38 +31,24 @@ def separate_comma(number)
   end
   new_array.join.reverse.chop!
 end
-=begin
-def separate_comma(number)
-  num = number.to_s.split)
-    # number be turned into string and the split it up
-  new_num = num.size/3
-    # the num variable be divded by 3 because thats where the commas will go
-  if num.size < 4
-    # if the number is less than 4 it will ...
-    p number.to_string
-  elsif num.size%3 == 0
-    new_num.times do |i|
-  end
-end
-  p number
-end
+=end
 
-
-
-=begin
 # 2. Refactored Solution
+# I did my intial solution on Monday, and honestly I was stuck for hours. I think the problem made me over think and I tried to use all these crazy methods I didn't really undstand. So I went back to this assignment on Thursday and tried something more simple
+
 def separate_comma(number)
-  number.to_s.chars.to_a.reverse.each_slice(3).join(",").reverse
+  #my output needs to be a string, so I am taking the arugment number and making sure that it turns into a string
+  string = number.to_s
+  #var n is set string length -3
+  n = string.length - 3
+  #I decided to do a while loop and use the ruby method .insert
+  while n > 0
+    string.insert(n , ",")
+      n -= 3
+    end
+  p string
 end
 
-#The code won't run saying undefined method join, my thought process of what each meant is below. I told it to with the comma.
-#.to_s makes it a string
-#.chars returns an array of characters in str, ruby doc(rubyist pg.308 )
-#.to_a converts the object to an array
-#.reverse reserve self in place
-#.each_slice(3) walk through a number of certain elements at a time, for this one 3
-#joined it with the comma
-
-
+=begin
 # 3. Reflection
 =end
