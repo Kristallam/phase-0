@@ -100,7 +100,7 @@ class CreditCard
       end
 
     end
-    p @number.flatten!
+    @number.flatten!
 
 
     if @number.inject(0,:+) % 10 == 0
