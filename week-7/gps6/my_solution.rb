@@ -63,4 +63,16 @@ end
  end
 
 #=======================================================================
-# Reflection Section
+=begin
+Reflection Section
+What are the differences between the two different hash syntaxes shown in the state_data file?
+  One of the Hash syntax is a global hash while the other one is not. Those are the main difference.
+What does require_relative do? How is it different from require?
+  require_relative is a pointer to another file, a path. Require_relative is a method that takes a string for its arguement. It is also a Local scope. Require is used to add external libraries and it is a global scope
+What are some ways to iterate through a hash?
+  Some ways to interate through a has is by .each and do |key, value| then we set the key and value to the variables that we are trying to iterate through.
+When refactoring virus_effects, what stood out to you about the variables, if anything?
+  Well for virus_effects we ended up not even using the instance variables because they were not needed since we were defining arguements in the method as well.
+What concept did you most solidify in this challenge?
+  I think the most solidifing thing in this challenge was use case statements. We were able to figure out how to use case statements in one line which made the code much more dry!
+=end
