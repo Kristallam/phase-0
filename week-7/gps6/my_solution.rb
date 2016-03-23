@@ -4,8 +4,11 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
-#
+# require_relative is a pointer to another file, a path. Require_relative is a method that takes a string for its arguement
+  # Local scope
+# require is used to add external libraries
+  # Global scope
+
 require_relative 'state_data'
 
 class VirusPredictor
@@ -16,50 +19,33 @@ class VirusPredictor
     @population_density = population_density
   end
 
+#Method virus_effects
+#PRINT return values of predicted_deaths and speed_of_spread
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    "#{@state} will lose #{predicted_deaths} people in this outbreak"
+    " and will spread across the state in #{speed_of_spread} months.\n\n"
   end
 
   private
 
-  def predicted_deaths(population_density, population, state)
-    # predicted deaths is solely based on population density
-    if @population_density >= 200
-      number_of_deaths = (@population * 0.4).floor
-    elsif @population_density >= 150
-      number_of_deaths = (@population * 0.3).floor
-    elsif @population_density >= 100
-      number_of_deaths = (@population * 0.2).floor
-    elsif @population_density >= 50
-      number_of_deaths = (@population * 0.1).floor
-    else
-      number_of_deaths = (@population * 0.05).floor
+#Method predicted_deaths takes population_density, population, state as an arguement
+#IF statement to apply a scale factor to the population density to find the number of deaths (rounding down)
+#PRINT a statement with the sate and number of deaths associated with outbreak
+  def predicted_deaths
+    case @population_density; when 200; (@population * 0.4).floor; when (150..199); (@population * 0.3).floor; when (100..149); (@population * 0.2).floor; when (50..99); (@population * 0.1).floor; else; (@population * 0.05).floor;
     end
-
-    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
-
   end
 
-  def speed_of_spread(population_density, state) #in months
+
+#Method speed of spread takes arguement population_density and state
+#IF statement to create a scale to calculate the time it takes for the virus to spread
+#PUTS the statement of how long it will take the virus to spread
+  def speed_of_spread
+     #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
-    speed = 0.0
-
-    if @population_density >= 200
-      speed += 0.5
-    elsif @population_density >= 150
-      speed += 1
-    elsif @population_density >= 100
-      speed += 1.5
-    elsif @population_density >= 50
-      speed += 2
-    else
-      speed += 2.5
+    case @population_density; when 200; speed = 0.5; when (150..199); speed = 1; when (100..149); speed = 1.5; when (50..99); speed = 2; else; speed = 2.5;
     end
-
-    puts " and will spread across the state in #{speed} months.\n\n"
-
   end
 
 end
@@ -70,18 +56,11 @@ end
  # initialize VirusPredictor for each state
 
 
-alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
-alabama.virus_effects
-
-jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
-jersey.virus_effects
-
-california = VirusPredictor.new("California", STATE_DATA["California"][:population_density], STATE_DATA["California"][:population])
-california.virus_effects
-
-alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
-alaska.virus_effects
-
+ STATE_DATA.each do |state, virus_data|
+  virus_state = VirusPredictor.new(state, virus_data[:population_density],
+    virus_data[:population])
+  virus_state.virus_effects
+ end
 
 #=======================================================================
 # Reflection Section
