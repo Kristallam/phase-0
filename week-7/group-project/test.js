@@ -1,4 +1,26 @@
 // Add the finished solution here when you receive it.
+// Sum Function
+function sum(array) {
+  return array.reduce(function(a, b) {
+    return a + b;
+  });
+};
+
+// Mean Function
+function mean(array) {
+  return sum(array) / array.length;
+};
+
+// Median Function
+function median(array) {
+  if (array.length % 2 != 0)
+    var median = array[(array.length - 1) / 2];
+  else
+    var median = (array[array.length / 2] + array[array.length / 2 - 1]) / 2.0;
+  console.log(median);
+  return median;
+};
+
 // __________________________________________
 // Tests:  Do not alter code below this line.
 
