@@ -1,4 +1,6 @@
-Number 1:
+<h1>Relase 5:</h1>
+
+<h2>Number 1:</h2>
 id          state_name  population_density  population  region_id
 ----------  ----------  ------------------  ----------  ----------
 1           Alabama     96.45               4822023     5
@@ -53,7 +55,7 @@ id          state_name  population_density  population  region_id
 50          Wisconsin   105.2               5726398     4
 51          Wyoming     5.851               576412      8
 
-Number 2:
+<h2>Number 2:</h2>
 id          region_name
 ----------  -----------
 1           New England
@@ -68,7 +70,7 @@ id          region_name
 10          North Pacif
 11          Tropical Pa
 
-Number 3:
+<h2>Number 3:</h2>
 state_name  population
 ----------  ----------
 Alabama     4822023
@@ -123,7 +125,7 @@ West Virgi  1855413
 Wisconsin   5726398
 Wyoming     576412
 
-Number 4:
+<h2>Number 4:</h2>
 state_name  population
 ----------  ----------
 California  38041430
@@ -178,7 +180,7 @@ Washington  632323
 Vermont     626011
 Wyoming     576412
 
-Number 5:
+<h2>Number 5:</h2>
 state_name
 ----------
 Arkansas
@@ -186,7 +188,7 @@ Louisiana
 Oklahoma
 Texas
 
-Number 6:
+<h2>Number 6:</h2>
 state_name  population_density
 ----------  ------------------
 Iowa        54.81
@@ -227,7 +229,7 @@ Rhode Isla  1016.0
 New Jersey  1205.0
 Washington  10357.0
 
-Number 7:
+<h2>Number 7:</h2>
 state_name
 ----------
 Hawaii
@@ -236,7 +238,7 @@ Montana
 New Hampsh
 Rhode Isla
 
-Number 8:
+<h2>Number 8:</h2>
 state_name   region_id
 -----------  ----------
 Connecticut  1
@@ -291,7 +293,7 @@ Washington   9
 Alaska       10
 Hawaii       11
 
-Number 9:
+<h2>Number 9:</h2>
 region_name
 ------------------
 East North Central
@@ -299,7 +301,7 @@ East South Central
 West North Central
 West South Central
 
-Number 10:
+<h2>Number 10:</h2>
 region_name  state_name
 -----------  -----------
 New England  Connecticut
@@ -863,3 +865,16 @@ Mountain     Hawaii
 Pacific      Hawaii
 North Pacif  Hawaii
 Tropical Pa  Hawaii
+
+<h1>Release 6:</h1>
+![Schema](8.4_Schema.png)
+
+<h1>Release 7: Refect</h1>
+What are databases for?
+  Databases are used to store data and also to organize data for when you want to search a specific kind.
+What is a one-to-many relationship?
+  One to many relationship mean that one specific key can have many different entity. For example, one customer can make many orders.
+What is a primary key? What is a foreign key? How can you determine which is which?
+  Primary key is the key that creates a unique idenity for each entity. Foregin key is the key that is the primary key but on the another table. You deteremine this by choosing an entity that is unique to each key.
+How can you select information out of a SQL database? What are some general guidelines for that?
+  You can select information out of a SQL database by calling it from its table name then selecting the specifc entities that are within that table.
