@@ -28,7 +28,7 @@ def super_fizzbuzz(array)
     end
   end
 
-puts new_array
+return new_array
 end
 
 
