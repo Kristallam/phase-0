@@ -17,13 +17,13 @@ function superFizzbuzz(array){
     var newArray = [];
 
     for(var i in array){
-      if(array[i] % 15 == 0)
+      if(array[i] % 15 == 0){
         newArray.push("FizzBuzz");
-      else if(array[i] % 5 == 0)
+      }else if(array[i] % 5 == 0){
        newArray.push("Buzz");
-      else if(array[i] % 3 == 0)
+      }else if(array[i] % 3 == 0){
         newArray.push("Fizz");
-      else
+      }else
         newArray.push(array[i]);
     }
     return newArray
@@ -32,6 +32,7 @@ function superFizzbuzz(array){
 
 
 console.log(superFizzbuzz([13,10,5,9,25,]));
+
 
 /*
 Reflection
